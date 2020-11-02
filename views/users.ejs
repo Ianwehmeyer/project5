@@ -1,0 +1,28 @@
+<!-- {"users": [
+        { "id": uuidv4(), "fname": "Bruce", "lname": "Banner"},
+        { "id": uuidv4(), "fname": "Clark", "lname": "Kent"},
+        { "id": uuidv4(), "fname": "Diana", "lname": "Prince"},
+        { "id": uuidv4(), "fname": "Tony", "lname": "Stark"}
+    ] }-->
+    <html>
+
+        <body>
+            <h3></h3>
+            <table border="1">
+                <tr>
+                    <th align="left">ID</th>
+                    <th align="left">First Name</th>
+                    <th align="left">Last Name</th>
+                </tr>
+                <% users.forEach ( user => { %>
+                <tr>
+                    <td><a href="/users/<%=user.id%>"><%=user.id%></a></td>
+                    <td><%=user.fname%></td>
+                    <td><%=user.lname%></td>
+                </tr>
+                <% }) %>
+            </table>
+        </body>
+        
+        </html>
+        

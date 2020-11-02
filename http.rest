@@ -1,0 +1,23 @@
+###
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "fname": "Albert",
+    "lname": "Hitchcock"
+}
+
+###
+DELETE http://localhost:3000/users/4378dc83-cb3d-43a2-af21-f79846c44725
+
+###
+http://localhost:3000/users/bc1acb06-df5c-4f25-946e-1cfe2de4fb6c
+
+
+###
+PATCH http://localhost:3000/users/4378dc83-cb3d-43a2-af21-f79846c44725 HTTP/1.1
+content-type: application/json
+
+{
+    "fname": "Lois"
+}
