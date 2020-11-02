@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Login app + Key project requirements and features",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
