@@ -1,12 +1,12 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import userRoutes from './routes/users.js'
+import userRoutes from './routes/users.js';
+
 
 const app = express();
 const port = 3000;
 
 app.set('view engine','ejs')
-
 app.use( bodyParser.urlencoded({ extended: true}));
 app.use( bodyParser.json());
 
